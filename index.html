@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تطبيقات مشروعات وزارة النقل</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="bg-anim" aria-hidden="true"></div>
+  <header>
+    <h1>تطبيقات مشروعات وزارة النقل</h1>
+  <h3>"شركة جيوانفورماتكس" </h3>
+    <div class="filters">
+      <input type="text" id="searchInput" placeholder="ابحث عن تطبيق أو محور...">
+      <select id="categoryFilter">
+        <option value="">جميع المحاور</option>
+        <option value="محور الصعيد الغربي">محور الصعيد الغربي</option>
+        <option value="وصلة دهشور الجنوبية">وصلة دهشور الجنوبية</option>
+        <option value="القوس الشرقى للدائرى الأقليمى و خط الروبيكى">القوس الشرقى للدائرى الأقليمى و خط الروبيكى</option>
+        <option value="محور كلابشة">محور كلابشة</option>
+        <option value="طريق قنا الاقصر">طريق قنا الاقصر</option>
+        <option value="وصلة طريق السويس من الطريق الدائري">وصلة طريق السويس من الطريق الدائري</option>
+        <option value="طريق القاهرة السويس الصحراوي (السويس الحر)">طريق القاهرة السويس الصحراوي (السويس الحر)</option>
+        <option value="محور قوص">محور قوص</option>
+      </select>
+    </div>
+  </header>
+
+   <section class="intro">
+    <h1>منصة تطبيقات مشروعات وزارة النقل</h1>
+    
+    <p>
+      تمثل هذه البوابة منصة تفاعلية لعرض تطبيقات 
+      <strong>مشروعات وزارة النقل</strong>، 
+      والتي تهدف إلى دعم رؤية الدولة المصرية في تطوير البنية التحتية وتحسين كفاءة النقل 
+      والربط الإقليمي بين المحافظات.
+    </p>
+
+    <p>
+      تُعد هذه التطبيقات ثمرة تعاون بين 
+      <strong>وزارة النقل</strong> و<strong>شركة جيو إنفورماتكس</strong>، 
+      حيث تم استخدام أحدث تقنيات نظم المعلومات الجغرافية (GIS) 
+      لعرض بيانات المحاور والطرق والمشروعات القومية على خريطة تفاعلية تسهّل الوصول إلى المعلومات 
+      ودعم اتخاذ القرار.
+    </p>
+
+    <p>
+      من خلال هذه المنصة، يمكنكم استعراض كل محور من محاور النقل في مصر، والتعرّف على التطبيقات 
+      والروابط الخاصة به، بما يشمل التحليل المكاني، ومتابعة التنفيذ، وإدارة الأصول، 
+      وتكامل قواعد البيانات الجغرافية.
+    </p>
+
+    <h2>المحاور التي تم دراستها</h2>
+    <ul class="axis-list">
+      <li>محور الصعيد الغربي</li>
+      <li>وصلة دهشور الجنوبية</li>
+      <li>القوس الشرقي للطريق الدائري الإقليمي وخط الروبيكي</li>
+      <li>محور كلابشة</li>
+      <li>طريق قنا  الأقصر</li>
+      <li>وصلة طريق السويس من الطريق الدائري</li>
+      <li>طريق القاهرة  السويس الصحراوي (السويس الحر)</li>
+      <li>محور قوص</li>
+    </ul>
+
+    <div class="objectives">
+      <h3>الهدف من المشروع</h3>
+      <ul>
+        <li>عرض التطبيقات والمشروعات الجغرافية في قطاع النقل بشكل تفاعلي.</li>
+        <li>تعزيز الشفافية وسهولة الوصول إلى المعلومات.</li>
+        <li>دعم التحول الرقمي وإدارة البنية التحتية الذكية.</li>
+        <li>تمكين الجهات التنفيذية من اتخاذ قرارات مبنية على البيانات.</li>
+      </ul>
+    </div>
+  </section> 
+  
+  <main id="projectsContainer">
+
+    <!-- محور الصعيد الغربي -->
+    <section data-category="محور الصعيد الغربي">
+      <h2>محور الصعيد الغربي</h2>
+      <div class="cards">
+        <article class="card" data-url="https://www.arcgis.com/apps/dashboards/5c855c890cd349e185366b28dbafa9c2">
+          <a class="card-link" href="https://www.arcgis.com/apps/dashboards/5c855c890cd349e185366b28dbafa9c2" target="_blank">لوحة مؤشرات الأراضى العمرانية</a>
+          <p class="desc">لوحة تعرض مؤشرات تعكس حالة الأراضي العمرانية بالمحور.</p>
+          <button class="copy" data-url="https://www.arcgis.com/apps/dashboards/5c855c890cd349e185366b28dbafa9c2">نسخ الرابط</button>
+        </article>
+
+        <article class="card" data-url="https://storymaps.arcgis.com/collections/eaf5c2639d68475ca8baf840cc62a411">
+          <a class="card-link" href="https://storymaps.arcgis.com/collections/eaf5c2639d68475ca8baf840cc62a411" target="_blank">  مراحل سير العمل الخاصة بطريق الصعيد الغربي </a>
+          <p class="desc">  تفاصيل مراحل سير العمل الخاصة بطريق الصعيد الغربي    .</p>
+          <button class="copy" data-url="https://www.arcgis.com/apps/dashboards/49446055c2d44528b1f1cb1f61f9bc6e">نسخ الرابط</button>
+        </article>
+
+        <article class="card" data-url="https://www.arcgis.com/apps/dashboards/49446055c2d44528b1f1cb1f61f9bc6e">
+          <a class="card-link" href="https://www.arcgis.com/apps/dashboards/49446055c2d44528b1f1cb1f61f9bc6e" target="_blank">لوحة مؤشرات أسعار الأراضى</a>
+          <p class="desc">مخططات ومؤشرات خاصة بتحركات أسعار الأراضي.</p>
+          <button class="copy" data-url="https://www.arcgis.com/apps/dashboards/49446055c2d44528b1f1cb1f61f9bc6e">نسخ الرابط</button>
+        </article>
+
+        <article class="card" data-url="https://experience.arcgis.com/experience/74d4e1658880457bb2e6dfc87a39720d">
+          <a class="card-link" href="https://experience.arcgis.com/experience/74d4e1658880457bb2e6dfc87a39720d" target="_blank">محور الصعيد الغربي (الجيزة / ابوسمبل)</a>
+          <p class="desc">تجربة تفاعلية تعرض خريطة المشروع ومضامينه.</p>
+          <button class="copy" data-url="https://experience.arcgis.com/experience/74d4e1658880457bb2e6dfc87a39720d">نسخ الرابط</button>
+        </article>
+
+
+    </section>
+
+    <!-- وصلة دهشور الجنوبية -->
+    <section data-category="وصلة دهشور الجنوبية">
+      <h2>وصلة دهشور الجنوبية</h2>
+      <div class="cards">
+        <article class="card" data-url="https://www.arcgis.com/apps/dashboards/687e564801b248c6ab4541bca985f9bd">
+          <a class="card-link" href="https://www.arcgis.com/apps/dashboards/687e564801b248c6ab4541bca985f9bd" target="_blank">لوحة مؤشرات أسعار الأراضى</a>
+          <p class="desc">مؤشرات أسعار الأراضي الخاصة بالوصلة.</p>
+          <button class="copy" data-url="https://www.arcgis.com/apps/dashboards/687e564801b248c6ab4541bca985f9bd">نسخ الرابط</button>
+        </article>
+
+        <article class="card" data-url="https://www.arcgis.com/apps/dashboards/97daea1db8ed4cdd8bdf5f17217810d9">
+          <a class="card-link" href="https://www.arcgis.com/apps/dashboards/97daea1db8ed4cdd8bdf5f17217810d9" target="_blank">لوحة مؤشرات الأراضي الزراعية والصناعية</a>
+          <p class="desc">مؤشرات تسلط الضوء على الأراضي الزراعية والصناعية.</p>
+          <button class="copy" data-url="https://www.arcgis.com/apps/dashboards/97daea1db8ed4cdd8bdf5f17217810d9">نسخ الرابط</button>
+        </article>
+
+        <article class="card" data-url="https://www.arcgis.com/apps/dashboards/4b68db62a12f4462b74ec612353545d6">
+          <a class="card-link" href="https://www.arcgis.com/apps/dashboards/4b68db62a12f4462b74ec612353545d6" target="_blank">لوحة مؤشرات الدراسة المدنية</a>
+          <p class="desc">مؤشرات خاصة بالجوانب المدنية والهندسية.</p>
+          <button class="copy" data-url="https://www.arcgis.com/apps/dashboards/4b68db62a12f4462b74ec612353545d6">نسخ الرابط</button>
+        </article>
+
+        <article class="card" data-url="https://www.arcgis.com/apps/dashboards/1cb1e42f43b04b67ba5923e3fa2996ba">
+          <a class="card-link" href="https://www.arcgis.com/apps/dashboards/1cb1e42f43b04b67ba5923e3fa2996ba" target="_blank">لوحة مؤشرات الأراضى العمرانية</a>
+          <p class="desc">عرض بيانات العمران ضمن نطاق الوصلة.</p>
+          <button class="copy" data-url="https://www.arcgis.com/apps/dashboards/1cb1e42f43b04b67ba5923e3fa2996ba">نسخ الرابط</button>
+        </article>
+
+        <article class="card" data-url="https://experience.arcgis.com/experience/7159ef844c684043a2afeb25673cfb25/">
+          <a class="card-link" href="https://experience.arcgis.com/experience/7159ef844c684043a2afeb25673cfb25/" target="_blank">لوحة مؤشرات أنماط و انواع الأراضى</a>
+          <p class="desc">تحليل أنماط وأنواع الأراضي في المنطقة.</p>
+          <button class="copy" data-url="https://experience.arcgis.com/experience/7159ef844c684043a2afeb25673cfb25/">نسخ الرابط</button>
+        </article>
+
+        <article class="card" data-url="https://experience.arcgis.com/experience/e380a6020d964cb295193da855cfe4a9/">
+          <a class="card-link" href="https://experience.arcgis.com/experience/e380a6020d964cb295193da855cfe4a9/" target="_blank">لوحة مؤشرات أسعار و دراسات الأراضى</a>
+          <p class="desc">دراسات متعلقة بأسعار الأراضي وتحليلها.</p>
+          <button class="copy" data-url="https://experience.arcgis.com/experience/e380a6020d964cb295193da855cfe4a9/">نسخ الرابط</button>
+        </article>
+      </div>
+    </section>
+
+    <!-- القوس الشرقى -->
+    <section data-category="القوس الشرقى للدائرى الأقليمى و خط الروبيكى">
+      <h2>القوس الشرقى للدائرى الأقليمى و خط الروبيكى</h2>
+      <div class="cards">
+        <article class="card" data-url="https://www.arcgis.com/apps/dashboards/b99ee8d8fcda45efb337ffce46039ae2">
+          <a class="card-link" href="https://www.arcgis.com/apps/dashboards/b99ee8d8fcda45efb337ffce46039ae2" target="_blank">لوحة مؤشرات الأراضي الزراعية والصناعية</a>
+          <p class="desc">مؤشرات الأراضي الزراعية والصناعية للقوس الشرقى.</p>
+          <button class="copy" data-url="https://www.arcgis.com/apps/dashboards/b99ee8d8fcda45efb337ffce46039ae2">نسخ الرابط</button>
+        </article>
+
+        <article class="card" data-url="https://www.arcgis.com/apps/dashboards/48c0447e113d43a697908d6b315eea4a">
+          <a class="card-link" href="https://www.arcgis.com/apps/dashboards/48c0447e113d43a697908d6b315eea4a" target="_blank">لوحة مؤشرات الدراسة المدنية الاقليمي</a>
+          <p class="desc">مؤشرات للدراسة المدنية بمستوى إقليمي.</p>
+          <button class="copy" data-url="https://www.arcgis.com/apps/dashboards/48c0447e113d43a697908d6b315eea4a">نسخ الرابط</button>
+        </article>
+
+        <article class="card" data-url="https://www.arcgis.com/apps/dashboards/ab7611e2f4384ac69d1da597a5c4d426">
+          <a class="card-link" href="https://www.arcgis.com/apps/dashboards/ab7611e2f4384ac69d1da597a5c4d426" target="_blank">لوحة مؤشرات الأراضى العمرانية</a>
+          <p class="desc">مؤشرات العمران لمساحة القوس الشرقى.</p>
+          <button class="copy" data-url="https://www.arcgis.com/apps/dashboards/ab7611e2f4384ac69d1da597a5c4d426">نسخ الرابط</button>
+        </article>
+
+        <article class="card" data-url="https://www.arcgis.com/apps/dashboards/04811fcd6f2d44518c3a44dd90cf20ca">
+          <a class="card-link" href="https://www.arcgis.com/apps/dashboards/04811fcd6f2d44518c3a44dd90cf20ca" target="_blank">لوحة مؤشرات أسعار الأراضى</a>
+          <p class="desc">مؤشرات أسعار الأراضي بالقوس الشرقى.</p>
+          <button class="copy" data-url="https://www.arcgis.com/apps/dashboards/04811fcd6f2d44518c3a44dd90cf20ca">نسخ الرابط</button>
+        </article>
+
+        <article class="card" data-url="https://storymaps.arcgis.com/stories/3678b8faa78a452ebe45db6a30b98e0b">
+          <a class="card-link" href="https://storymaps.arcgis.com/stories/3678b8faa78a452ebe45db6a30b98e0b" target="_blank">   مراحل سير العمل الخاصة بمنطقة الدراسة الخاصة القوس الشرقى  </a>
+          <p class="desc">  تفاصيل مراحل سير العمل الخاصة بالقوس الشرقي    .</p>
+          <button class="copy" data-url="https://storymaps.arcgis.com/stories/3678b8faa78a452ebe45db6a30b98e0b">نسخ الرابط</button>
+        </article>
+      </div>
+    </section>
+
+    <!-- محور كلابشة -->
+    <section data-category="محور كلابشة">
+      <h2>محور كلابشة</h2>
+      <div class="cards">
+        <article class="card" data-url="https://www.arcgis.com/apps/dashboards/2529bc0ae66a4f5f8e692c383d1d24ae">
+          <a class="card-link" href="https://www.arcgis.com/apps/dashboards/2529bc0ae66a4f5f8e692c383d1d24ae" target="_blank">لوحة مؤشرات أسعار الأراضى</a>
+          <p class="desc">مؤشرات أسعار الأراضي بمحيط محور كلابشة.</p>
+          <button class="copy" data-url="https://www.arcgis.com/apps/dashboards/2529bc0ae66a4f5f8e692c383d1d24ae">نسخ الرابط</button>
+        </article>
+
+        <article class="card" data-url="https://www.arcgis.com/apps/dashboards/989c5ff2f91d44c096a1cb073358a4d3">
+          <a class="card-link" href="https://www.arcgis.com/apps/dashboards/989c5ff2f91d44c096a1cb073358a4d3" target="_blank">لوحة مؤشرات الأراضى الزراعية والعمرانية</a>
+          <p class="desc">مؤشرات الزراعة والعمران في كلابشة.</p>
+          <button class="copy" data-url="https://www.arcgis.com/apps/dashboards/989c5ff2f91d44c096a1cb073358a4d3">نسخ الرابط</button>
+        </article>
+
+        <article class="card" data-url="https://storymaps.arcgis.com/stories/3c8f04f4d0f94198928d81848c5795eb">
+          <a class="card-link" href="https://storymaps.arcgis.com/stories/3c8f04f4d0f94198928d81848c5795eb" target="_blank">تطور الاراضي المحيطة بمحور كلابشة</a>
+          <p class="desc"> يوضح تأثير المحور على الأراضي المحيطة.</p>
+          <button class="copy" data-url="https://storymaps.arcgis.com/stories/3c8f04f4d0f94198928d81848c5795eb">نسخ الرابط</button>
+        </article>
+
+        <article class="card" data-url="https://experience.arcgis.com/experience/e197a279771940309212170a74ede75d/">
+          <a class="card-link" href="https://experience.arcgis.com/experience/e197a279771940309212170a74ede75d/" target="_blank">لوحة مؤشرات أنماط و أسعار الأراضى</a>
+          <p class="desc">تحليلات لأنماط وأسعار الأراضي بمحيط كلابشة.</p>
+          <button class="copy" data-url="https://experience.arcgis.com/experience/e197a279771940309212170a74ede75d/">نسخ الرابط</button>
+        </article>
+
+        <article class="card" data-url="https://transport-p-a.maps.arcgis.com/apps/webappviewer/index.html?id=61f7685c76824fd2b7ff3777a59f7775">
+          <a class="card-link" href="https://transport-p-a.maps.arcgis.com/apps/webappviewer/index.html?id=61f7685c76824fd2b7ff3777a59f7775" target="_blank">منطقة دراسة محور كلابشة</a>
+          <p class="desc">تطبيق WebAppViewer لمنطقة الدراسة.</p>
+          <button class="copy" data-url="https://transport-p-a.maps.arcgis.com/apps/webappviewer/index.html?id=61f7685c76824fd2b7ff3777a59f7775">نسخ الرابط</button>
+        </article>
+      </div>
+    </section>
+
+    <!-- طريق قنا الاقصر -->
+    <section data-category="طريق قنا الاقصر">
+      <h2>طريق قنا الاقصر</h2>
+      <div class="cards">
+        <article class="card" data-url="https://storymaps.arcgis.com/stories/e98ec507f55a48be8889c0135e7e56c5">
+          <a class="card-link" href="https://storymaps.arcgis.com/stories/e98ec507f55a48be8889c0135e7e56c5" target="_blank"> مراحل سير العمل الخاصة بمنطقة الدراسة الخاصة بطريق قنا الاقصر      </a>
+          <p class="desc">    تفاصيل مراحل سير العمل الخاصة بمنطقة الدراسة الخاصة بطريق قنا الاقصر  </p>
+          <button class="copy" data-url="https://storymaps.arcgis.com/stories/e98ec507f55a48be8889c0135e7e56c5">نسخ الرابط</button>
+        </article>
+
+        <article class="card" data-url="https://www.arcgis.com/apps/dashboards/048f4e4237124929bc8395ba40ec3d0f">
+          <a class="card-link" href="https://www.arcgis.com/apps/dashboards/048f4e4237124929bc8395ba40ec3d0f" target="_blank">لوحة مؤشرات الاسعار الأراضى</a>
+          <p class="desc">مؤشرات أسعار الأراضي لطريق قنا الأقصر.</p>
+          <button class="copy" data-url="https://www.arcgis.com/apps/dashboards/048f4e4237124929bc8395ba40ec3d0f">نسخ الرابط</button>
+        </article>
+
+        <article class="card" data-url="https://www.arcgis.com/apps/dashboards/0c7d78be88004cc3ab9f364dc5bb8255">
+          <a class="card-link" href="https://www.arcgis.com/apps/dashboards/0c7d78be88004cc3ab9f364dc5bb8255" target="_blank">لوحة مؤشرات الأراضى الزراعية والعمرانية</a>
+          <p class="desc">مؤشرات الزراعة والعمران بطريق قنا.</p>
+          <button class="copy" data-url="https://www.arcgis.com/apps/dashboards/0c7d78be88004cc3ab9f364dc5bb8255">نسخ الرابط</button>
+        </article>
+
+        <article class="card" data-url="https://transport-p-a.maps.arcgis.com/apps/webappviewer/index.html?id=43915f9815224bdc8084c5a1f3d77ef7">
+          <a class="card-link" href="https://transport-p-a.maps.arcgis.com/apps/webappviewer/index.html?id=43915f9815224bdc8084c5a1f3d77ef7" target="_blank">منطقة الدراسة محور قنا</a>
+          <p class="desc">WebAppViewer لمنطقة الدراسة بمحور قنا.</p>
+          <button class="copy" data-url="https://transport-p-a.maps.arcgis.com/apps/webappviewer/index.html?id=43915f9815224bdc8084c5a1f3d77ef7">نسخ الرابط</button>
+        </article>
+
+        <article class="card" data-url="https://experience.arcgis.com/experience/bf2cabc64d70477f840305b8409b8f51/">
+          <a class="card-link" href="https://experience.arcgis.com/experience/bf2cabc64d70477f840305b8409b8f51/" target="_blank">لوحة مؤشرات أنماط و أسعار الأراضى</a>
+          <p class="desc">Experience تعرض أنماط وأسعار الأراضي.</p>
+          <button class="copy" data-url="https://experience.arcgis.com/experience/bf2cabc64d70477f840305b8409b8f51/">نسخ الرابط</button>
+        </article>
+      </div>
+    </section>
+
+    <!-- وصلة طريق السويس -->
+    <section data-category="وصلة طريق السويس من الطريق الدائري">
+      <h2>وصلة طريق السويس من الطريق الدائري</h2>
+      <div class="cards">
+        <article class="card" data-url="https://storymaps.arcgis.com/stories/cab219aeed1348cc8b0a683e9a7dd0ee">
+          <a class="card-link" href="https://storymaps.arcgis.com/stories/cab219aeed1348cc8b0a683e9a7dd0ee" target="_blank">تطور الاراضي المحيطة بوصلة طريق السويس من الطريق الدائري</a>
+          <p class="desc">قص تفاصيل مراحل سير العمل الخاصة بوصلة طريق السويس    </p>
+          <button class="copy" data-url="https://storymaps.arcgis.com/stories/cab219aeed1348cc8b0a683e9a7dd0ee">نسخ الرابط</button>
+        </article>
+
+        <article class="card" data-url="https://transport-p-a.maps.arcgis.com/apps/instant/filtergallery/index.html?appid=b701f3fd532740c1b97dd7fc0e40ea2b">
+          <a class="card-link" href="https://transport-p-a.maps.arcgis.com/apps/instant/filtergallery/index.html?appid=b701f3fd532740c1b97dd7fc0e40ea2b" target="_blank">وصلة طريق السويس من الطريق الدائري (Filter Gallery)</a>
+          <p class="desc">تطبيق فلترة وعرض لبيانات الوصلة.</p>
+          <button class="copy" data-url="https://transport-p-a.maps.arcgis.com/apps/instant/filtergallery/index.html?appid=b701f3fd532740c1b97dd7fc0e40ea2b">نسخ الرابط</button>
+        </article>
+
+        <article class="card" data-url="https://experience.arcgis.com/experience/82083bf028b54ea28dda509e7bab0e9c/">
+          <a class="card-link" href="https://experience.arcgis.com/experience/82083bf028b54ea28dda509e7bab0e9c/" target="_blank">السويس (Experience)</a>
+          <p class="desc">عرض تفاعلي لمشروع السويس.</p>
+          <button class="copy" data-url="https://experience.arcgis.com/experience/82083bf028b54ea28dda509e7bab0e9c/">نسخ الرابط</button>
+        </article>
+
+        <article class="card" data-url="https://www.arcgis.com/apps/dashboards/489e3651315d4b22a35faf826f867807">
+          <a class="card-link" href="https://www.arcgis.com/apps/dashboards/489e3651315d4b22a35faf826f867807" target="_blank">لوحة مؤشرات الدراسة المدنية</a>
+          <p class="desc">مؤشرات الدراسة المدنية الخاصة بالسويس.</p>
+          <button class="copy" data-url="https://www.arcgis.com/apps/dashboards/489e3651315d4b22a35faf826f867807">نسخ الرابط</button>
+        </article>
+
+        <article class="card" data-url="https://www.arcgis.com/apps/dashboards/85be400b84fe4c50be597182bfbf207d">
+          <a class="card-link" href="https://www.arcgis.com/apps/dashboards/85be400b84fe4c50be597182bfbf207d" target="_blank">لوحة مؤشرات الأراضى العمرانية</a>
+          <p class="desc">مؤشرات العمرانية بمنطقة السويس.</p>
+          <button class="copy" data-url="https://www.arcgis.com/apps/dashboards/85be400b84fe4c50be597182bfbf207d">نسخ الرابط</button>
+        </article>
+
+        <article class="card" data-url="https://www.arcgis.com/apps/dashboards/7770d9c7e9e948af8549667ab86a8c51">
+          <a class="card-link" href="https://www.arcgis.com/apps/dashboards/7770d9c7e9e948af8549667ab86a8c51" target="_blank">لوحة مؤشرات أسعار الأراضى</a>
+          <p class="desc">مؤشرات أسعار الأراضي بمنطقة السويس.</p>
+          <button class="copy" data-url="https://www.arcgis.com/apps/dashboards/7770d9c7e9e948af8549667ab86a8c51">نسخ الرابط</button>
+        </article>
+
+        <article class="card" data-url="https://transport-p-a.maps.arcgis.com/apps/webappviewer/index.html?id=fbc26aaa191842f79d109159be6a78f5">
+          <a class="card-link" href="https://transport-p-a.maps.arcgis.com/apps/webappviewer/index.html?id=fbc26aaa191842f79d109159be6a78f5" target="_blank">منطقة الدراسة وصلة طريق السويس (WebAppViewer)</a>
+          <p class="desc">WebAppViewer لمنطقة دراسة الوصلة.</p>
+          <button class="copy" data-url="https://transport-p-a.maps.arcgis.com/apps/webappviewer/index.html?id=fbc26aaa191842f79d109159be6a78f5">نسخ الرابط</button>
+        </article>
+      </div>
+    </section>
+
+    <!-- طريق القاهرة السويس الصحراوي (السويس الحر) -->
+    <section data-category="طريق القاهرة السويس الصحراوي (السويس الحر)">
+      <h2>طريق القاهرة السويس الصحراوي (السويس الحر)</h2>
+      <div class="cards">
+        <article class="card" data-url="https://www.arcgis.com/apps/dashboards/4b4547b902d345708641ca2499e9cc7c">
+          <a class="card-link" href="https://www.arcgis.com/apps/dashboards/4b4547b902d345708641ca2499e9cc7c" target="_blank">لوحة مؤشرات أسعار الأراضى</a>
+          <p class="desc">مؤشرات أسعار الأراضي للمشروع.</p>
+          <button class="copy" data-url="https://www.arcgis.com/apps/dashboards/4b4547b902d345708641ca2499e9cc7c">نسخ الرابط</button>
+        </article>
+
+        <article class="card" data-url="https://www.arcgis.com/apps/dashboards/8a75afd782a84bcc9b32ce9b804025b7">
+          <a class="card-link" href="https://www.arcgis.com/apps/dashboards/8a75afd782a84bcc9b32ce9b804025b7" target="_blank">لوحة مؤشرات الأراضي الزراعية والصناعية</a>
+          <p class="desc">مؤشرات الأراضي الزراعية والصناعية للمشروع.</p>
+          <button class="copy" data-url="https://www.arcgis.com/apps/dashboards/8a75afd782a84bcc9b32ce9b804025b7">نسخ الرابط</button>
+        </article>
+
+        <article class="card" data-url="https://www.arcgis.com/apps/dashboards/686d8234e853421da6c7426cde8d6017">
+          <a class="card-link" href="https://www.arcgis.com/apps/dashboards/686d8234e853421da6c7426cde8d6017" target="_blank">لوحة مؤشرات الأراضى العمرانية</a>
+          <p class="desc">مؤشرات العمرانية المتعلقة بالسويس الحر.</p>
+          <button class="copy" data-url="https://www.arcgis.com/apps/dashboards/686d8234e853421da6c7426cde8d6017">نسخ الرابط</button>
+        </article>
+
+        <article class="card" data-url="https://storymaps.arcgis.com/stories/739c03527e86469fad61572dfd9592e1">
+          <a class="card-link" href="https://storymaps.arcgis.com/stories/739c03527e86469fad61572dfd9592e1" target="_blank">طريق القاهرة - السويس الصحراوي (StoryMap)</a>
+          <p class="desc"> تفاصيل مراحل سير العمل الخاصة بالطريق     </p>
+          <button class="copy" data-url="https://storymaps.arcgis.com/stories/739c03527e86469fad61572dfd9592e1">نسخ الرابط</button>
+        </article>
+
+        <article class="card" data-url="https://transport-p-a.maps.arcgis.com/apps/instant/filtergallery/index.html?appid=784ee521a7d74573b010505f9bb72ffb">
+          <a class="card-link" href="https://transport-p-a.maps.arcgis.com/apps/instant/filtergallery/index.html?appid=784ee521a7d74573b010505f9bb72ffb" target="_blank">تطبيق منطقة الطريق (FilterGallery)</a>
+          <p class="desc">تطبيق فلترة بيانات خاصة بالمنطقة.</p>
+          <button class="copy" data-url="https://transport-p-a.maps.arcgis.com/apps/instant/filtergallery/index.html?appid=784ee521a7d74573b010505f9bb72ffb">نسخ الرابط</button>
+        </article>
+
+        <article class="card" data-url="https://www.arcgis.com/apps/dashboards/83f37387052845fb90f1d04f6088277f">
+          <a class="card-link" href="https://www.arcgis.com/apps/dashboards/83f37387052845fb90f1d04f6088277f" target="_blank">قياس الأثر التنموي خلال 30 سنة</a>
+          <p class="desc">قياس أثر المشروع على التنمية على مدى 30 سنة.</p>
+          <button class="copy" data-url="https://www.arcgis.com/apps/dashboards/83f37387052845fb90f1d04f6088277f">نسخ الرابط</button>
+        </article>
+
+        <article class="card" data-url="https://www.arcgis.com/apps/dashboards/676c18c4b7a04ae2ad1eba1bd5a255c3">
+          <a class="card-link" href="https://www.arcgis.com/apps/dashboards/676c18c4b7a04ae2ad1eba1bd5a255c3" target="_blank">قياس الأثر الاقتصادي والتنموي 2014-2024</a>
+          <p class="desc">دراسات تحليلية للأثر الاقتصادي بين 2014 و2024.</p>
+          <button class="copy" data-url="https://www.arcgis.com/apps/dashboards/676c18c4b7a04ae2ad1eba1bd5a255c3">نسخ الرابط</button>
+        </article>
+
+        <article class="card" data-url="https://experience.arcgis.com/experience/7aa0262a123248b7aa96db5bfbefb12e/">
+          <a class="card-link" href="https://experience.arcgis.com/experience/7aa0262a123248b7aa96db5bfbefb12e/" target="_blank">طريق السويس (Experience)</a>
+          <p class="desc">تجربة تفاعلية لعرض خطط طريق السويس.</p>
+          <button class="copy" data-url="https://experience.arcgis.com/experience/7aa0262a123248b7aa96db5bfbefb12e/">نسخ الرابط</button>
+        </article>
+      </div>
+    </section>
+
+    <!-- محور قوص -->
+    <section data-category="محور قوص">
+      <h2>محور قوص</h2>
+      <div class="cards">
+        <article class="card" data-url="https://storymaps.arcgis.com/stories/bd328e2a5b8a4d9985bdba2eae711a07">
+          <a class="card-link" href="https://storymaps.arcgis.com/stories/bd328e2a5b8a4d9985bdba2eae711a07" target="_blank">تطور الاراضي المحيطة بمحور قوص</a>
+          <p class="desc"> تفاصيل مراحل سير العمل الخاصة بمحور قوص     </p>
+          <button class="copy" data-url="https://storymaps.arcgis.com/stories/bd328e2a5b8a4d9985bdba2eae711a07">نسخ الرابط</button>
+        </article>
+
+        <article class="card" data-url="https://www.arcgis.com/apps/dashboards/58fefdb551da441698ce9b40d9fccf80">
+          <a class="card-link" href="https://www.arcgis.com/apps/dashboards/58fefdb551da441698ce9b40d9fccf80" target="_blank">لوحة مؤشرات الاسعار الأراضى</a>
+          <p class="desc">مؤشرات أسعار الأراضي لمحور قوص.</p>
+          <button class="copy" data-url="https://www.arcgis.com/apps/dashboards/58fefdb551da441698ce9b40d9fccf80">نسخ الرابط</button>
+        </article>
+
+        <article class="card" data-url="https://www.arcgis.com/apps/dashboards/5a3aaa3b3a2647cc9280e4ee6ff5c1f6">
+          <a class="card-link" href="https://www.arcgis.com/apps/dashboards/5a3aaa3b3a2647cc9280e4ee6ff5c1f6" target="_blank">لوحة مؤشرات الأراضى الزراعية والعمرانية</a>
+          <p class="desc">مؤشرات الأراضي الزراعية والعمرانية بقوص.</p>
+          <button class="copy" data-url="https://www.arcgis.com/apps/dashboards/5a3aaa3b3a2647cc9280e4ee6ff5c1f6">نسخ الرابط</button>
+        </article>
+
+        <article class="card" data-url="https://transport-p-a.maps.arcgis.com/apps/webappviewer/index.html?id=67afc365717a4e57bc896300b8938411">
+          <a class="card-link" href="https://transport-p-a.maps.arcgis.com/apps/webappviewer/index.html?id=67afc365717a4e57bc896300b8938411" target="_blank">تطبيق منطقة الدراسة محور قوص</a>
+          <p class="desc">WebAppViewer لعرض منطقة الدراسة بمحور قوص.</p>
+          <button class="copy" data-url="https://transport-p-a.maps.arcgis.com/apps/webappviewer/index.html?id=67afc365717a4e57bc896300b8938411">نسخ الرابط</button>
+        </article>
+
+        <article class="card" data-url="https://experience.arcgis.com/experience/83aeb3c15402424d85f63f682ee63b59/">
+          <a class="card-link" href="https://experience.arcgis.com/experience/83aeb3c15402424d85f63f682ee63b59/" target="_blank">لوحة مؤشرات أنماط و أسعار الأراضى</a>
+          <p class="desc">عرض أنماط وأسعار الأراضي لمحور قوص.</p>
+          <button class="copy" data-url="https://experience.arcgis.com/experience/83aeb3c15402424d85f63f682ee63b59/">نسخ الرابط</button>
+        </article>
+
+        <article class="card" data-url="https://transport-p-a.maps.arcgis.com/apps/instant/filtergallery/index.html?appid=1d894feec2724517af8c09e13ac9146a">
+          <a class="card-link" href="https://transport-p-a.maps.arcgis.com/apps/instant/filtergallery/index.html?appid=1d894feec2724517af8c09e13ac9146a" target="_blank">محور قوص (FilterGallery)</a>
+          <p class="desc">تطبيق فلترة لمحور قوص.</p>
+          <button class="copy" data-url="https://transport-p-a.maps.arcgis.com/apps/instant/filtergallery/index.html?appid=1d894feec2724517af8c09e13ac9146a">نسخ الرابط</button>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <button id="scrollTopBtn" title="الرجوع للأعلى">⬆️</button>
+
+  <script src="script.js"></script>
+</body>
+</html>

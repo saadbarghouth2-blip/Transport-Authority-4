@@ -1,0 +1,398 @@
+/* ============================= */
+/* Root variables (colors, theme) */
+/* ============================= */
+:root {
+  --bg: #0b0f19;
+  --card: #111827;
+  --card-2: #0f172a;
+  --text: #e5e7eb;
+  --muted: #a1a1aa;
+  --primary: #38bdf8;
+  --accent: #a78bfa;
+  --ring: rgba(56,189,248,.35);
+}
+
+/* ============================= */
+/* Global base styles            */
+/* ============================= */
+* { box-sizing: border-box; }
+
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Cairo', 'Tajawal', system-ui;
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* Gradient background for page depth */
+body {
+  background:
+    radial-gradient(1200px 600px at 85% -10%, rgba(167,139,250,.04), transparent),
+    radial-gradient(1000px 500px at -10% 20%, rgba(56,189,248,.03), transparent),
+    var(--bg);
+}
+
+/* ============================= */
+/* Header / Navbar Styles        */
+/* ============================= */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  backdrop-filter: saturate(140%) blur(10px);
+  background: linear-gradient(180deg, rgba(11,15,25,.92), rgba(11,15,25,.6), transparent);
+  border-bottom: 1px solid rgba(255,255,255,.04);
+  padding: 20px;
+  text-align: center;
+  transition: background .3s ease, box-shadow .3s ease;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 26px;
+  color: var(--primary);
+}
+
+/* Fixed navbar on scroll */
+header.sticky {
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  width: 100%;
+  background: rgba(11,15,25,0.95);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+  animation: fadeInDown 0.5s ease;
+}
+
+/* Header appear animation */
+@keyframes fadeInDown {
+  from { transform: translateY(-100%); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/* ============================= */
+/* Filters Section (Search + Select) */
+/* ============================= */
+.filters {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+
+input[type="text"], select {
+  background: var(--card);
+  color: var(--text);
+  border: 1px solid rgba(255,255,255,.06);
+  padding: 10px 12px;
+  border-radius: 12px;
+  outline: none;
+  min-width: 220px;
+  transition: box-shadow .18s, transform .08s;
+}
+
+input[type="text"]:focus, select:focus {
+  box-shadow: 0 0 0 6px var(--ring);
+}
+
+/* ============================= */
+/* Main Content & Sections       */
+/* ============================= */
+main { max-width: 1200px; margin: 18px auto; padding: 12px; }
+
+section { margin-bottom: 28px; transition: box-shadow .4s ease; }
+
+section h2 {
+  margin: 0 0 12px;
+  color: var(--accent);
+  font-size: 20px;
+  border-right: 4px solid rgba(167,139,250,.18);
+  padding-right: 10px;
+}
+
+/* Highlight animation when focused */
+section.highlight {
+  box-shadow: 0 0 18px 4px rgba(56,189,248,0.25);
+}
+
+/* ============================= */
+/* Cards Grid                    */
+/* ============================= */
+.cards {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+}
+
+/* ============================= */
+/* Individual Card Styling       */
+/* ============================= */
+.card {
+  background: linear-gradient(180deg, var(--card), var(--card-2));
+  border: 1px solid rgba(255,255,255,.04);
+  border-radius: 14px;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity .8s ease, transform .8s ease;
+}
+
+/* Animated entry for cards */
+.card.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card-link {
+  font-weight: 700;
+  color: var(--text);
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.card .desc {
+  color: var(--muted);
+  font-size: 13px;
+  margin: 0;
+}
+
+.card .copy {
+  margin-left: auto;
+  background: transparent;
+  border: 1px solid rgba(255,255,255,.06);
+  color: var(--text);
+  padding: 8px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background .12s;
+}
+
+/* Hover interactions */
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 30px rgba(56,189,248,.06);
+}
+.card:hover .card-link {
+  color: var(--primary);
+}
+
+/* ============================= */
+/* Scroll To Top Button          */
+/* ============================= */
+#scrollTopBtn {
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+  background: var(--primary);
+  color: #021018;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 10px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(56,189,248,0.15);
+  z-index: 999;
+  display: none;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+#scrollTopBtn:hover { background: #5fd3fa; transform: scale(1.05); }
+
+/* ============================= */
+/* Intro Section (Main Overview) */
+/* ============================= */
+.intro {
+  max-width: 1000px;
+  margin: 80px auto;
+  background: linear-gradient(135deg, rgba(56,189,248,.08), rgba(167,139,250,.08));
+  border: 1px solid rgba(255,255,255,.05);
+  border-radius: 24px;
+  padding: 50px 60px;
+  color: var(--text);
+  box-shadow: 0 8px 40px rgba(0,0,0,.3);
+  backdrop-filter: blur(10px);
+  animation: fadeIn 1.2s ease;
+}
+
+.intro h1 {
+  color: var(--primary);
+  font-size: 2.2em;
+  margin-bottom: 18px;
+}
+
+.intro p {
+  line-height: 1.9;
+  font-size: 1.05em;
+  color: var(--muted);
+  margin-bottom: 20px;
+}
+
+/* Axis clickable list */
+.axis-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 18px;
+}
+.axis-list li {
+  background: linear-gradient(90deg, rgba(56,189,248,.08), rgba(167,139,250,.08));
+  margin: 8px 0;
+  padding: 10px 16px;
+  border-radius: 12px;
+  transition: transform .25s ease, background .3s ease;
+  cursor: pointer;
+}
+.axis-list li:hover {
+  background: linear-gradient(90deg, rgba(56,189,248,.15), rgba(167,139,250,.15));
+  transform: translateX(-5px);
+}
+
+/* ============================= */
+/* Background Animation Layers   */
+/* ============================= */
+.bg-anim-extra {
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  background: radial-gradient(circle at 50% 20%, rgba(56,189,248,0.05), transparent 70%),
+              linear-gradient(180deg, rgba(10,15,30,0.9), rgba(0,0,0,0.95));
+  overflow: hidden;
+}
+
+/* Twinkling stars animation */
+.star {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: rgba(255,255,255,0.8);
+  border-radius: 50%;
+  animation: twinkle 6s infinite ease-in-out;
+}
+@keyframes twinkle {
+  0%,100% {opacity: .2; transform: scale(0.8);}
+  50% {opacity: 1; transform: scale(1.4);}
+}
+
+/* ============================= */
+/* General Animations            */
+/* ============================= */
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+/* Zoom effect when clicking axis from intro */
+section.zoomed { animation: focusZoom 0.7s ease forwards; }
+@keyframes focusZoom {
+  0% { transform: scale(1); box-shadow: 0 0 0 rgba(56,189,248,0); }
+  50% { transform: scale(1.03); box-shadow: 0 0 25px rgba(56,189,248,0.25); }
+  100% { transform: scale(1); box-shadow: 0 0 0 rgba(56,189,248,0); }
+}
+
+/* ============================= */
+/* Filter Mode (separate view)   */
+/* ============================= */
+body.filtered-mode {
+  background: linear-gradient(160deg, rgba(56,189,248,.1), rgba(167,139,250,.1), #0b0f19);
+}
+
+/* Hide main elements when in filtered mode */
+body.filtered-mode main,
+body.filtered-mode .intro,
+body.filtered-mode header h1 {
+  display: none;
+}
+
+/* Filtered view container */
+#filteredView {
+  display: none;
+  position: relative;
+  z-index: 10;
+  max-width: 1000px;
+  margin: 80px auto;
+  text-align: center;
+}
+body.filtered-mode #filteredView {
+  display: block;
+  animation: fadeIn 1s ease;
+}
+#filteredView h2 {
+  color: var(--primary);
+  margin-bottom: 30px;
+  font-size: 1.8em;
+}
+.filtered-cards {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+}
+
+/* ============================= */
+/* Back to Main Page Button      */
+/* ============================= */
+#backToMain {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background: var(--primary);
+  color: #021018;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 10px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(56,189,248,0.15);
+  z-index: 999;
+  transition: background 0.3s ease, transform 0.3s ease;
+  display: none;
+}
+#backToMain:hover { background: #5fd3fa; transform: scale(1.05); }
+
+/* ============================= */
+/* Intro Overlay / Splash Screen */
+/* ============================= */
+#introOverlay {
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(56,189,248,0.1), rgba(167,139,250,0.1), #0b0f19);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  transition: opacity 1s ease;
+}
+#introOverlay .welcome {
+  color: var(--primary);
+  font-size: 2em;
+  animation: introText 1.5s ease infinite alternate;
+}
+@keyframes introText {
+  from { letter-spacing: 1px; opacity: 0.7; }
+  to { letter-spacing: 4px; opacity: 1; }
+}
+#introOverlay.fade-out { opacity: 0; pointer-events: none; }
+
+/* ============================= */
+/* Page transition animations    */
+/* ============================= */
+.fade-in { animation: fadeInView 0.5s ease forwards; }
+.fade-out { animation: fadeOutView 0.4s ease forwards; }
+@keyframes fadeInView {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeOutView {
+  from { opacity: 1; transform: translateY(0); }
+  to { opacity: 0; transform: translateY(20px); }
+}
+
+/* ============================= */
+/* Responsive Adjustments        */
+/* ============================= */
+@media (max-width:520px){
+  header h1{font-size:18px}
+  input[type="text"], select{min-width:140px}
+}
