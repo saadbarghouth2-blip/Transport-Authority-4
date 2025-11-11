@@ -65,6 +65,54 @@ header.sticky {
   animation: fadeInDown 0.5s ease;
 }
 
+/* ============================= */
+/*   Logos Side Design (Right / Left) */
+/* ============================= */
+
+.side-logos {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.side-logos.right {
+  right: 20px;
+}
+
+.side-logos.left {
+  left: 20px;
+}
+
+.side-logos img {
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgba(255,255,255,0.08);
+  box-shadow: 0 0 18px rgba(56,189,248,0.25),
+              0 0 35px rgba(167,139,250,0.18);
+  transition: transform 0.25s ease, box-shadow .25s ease;
+  background: var(--card-2);
+}
+
+/* Hover animation */
+.side-logos img:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 25px rgba(56,189,248,0.45),
+              0 0 45px rgba(167,139,250,0.35);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .side-logos {
+    display: none; 
+  }
+}
+
 /* Header appear animation */
 @keyframes fadeInDown {
   from { transform: translateY(-100%); opacity: 0; }
